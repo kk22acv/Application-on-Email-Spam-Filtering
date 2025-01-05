@@ -1,5 +1,7 @@
 #Data Source
 [Your Link Here](https://www.kaggle.com/datasets/marcelwiechmann/enron-spam-data?select=enron_spam_data.csv)
+
+
 #Overview
 Phishing emails frequently imitate official messages, making it challenging to differentiate them from real communication. Conventional security measures, based on fixed rule systems, struggle to keep up with the advancing complexity of phishing strategies (Areej & Afrah, 2021). This challenge highlights the need for smart, flexible solutions. Introduce ML and NLP, technologies that can learn and adjust to new phishing patterns as time goes on. Machine Learning algorithms can undergo training on large datasets of both phishing and legitimate emails using supervised learning techniques (Benavides-Astudillo, et al., 2023).
 
