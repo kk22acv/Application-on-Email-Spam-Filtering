@@ -6,32 +6,42 @@
 
 Phishing emails frequently imitate official messages, making it challenging to differentiate them from real communication. Conventional security measures, based on fixed rule systems, struggle to keep up with the advancing complexity of phishing strategies (Areej & Afrah, 2021). This challenge highlights the need for smart, flexible solutions. Introduce ML and NLP, technologies that can learn and adjust to new phishing patterns as time goes on. Machine Learning algorithms can undergo training on large datasets of both phishing and legitimate emails using supervised learning techniques (Benavides-Astudillo, et al., 2023).
 
-#Reading Data:
+1. **Text Preprocessing:**
+   - Cleaning the text noises such as punctuation, numerals, stopwords etc using NLP.
+2. **Feature Extraction:**
+   - Extract features from email texts using TFIDF and Bag of Words.
+3. **Data Preparation:**
+   - Split data to prepare train and test sets.
+   - Prepare data by Unigram & Bigram with TFIDF and Unigram & Bigram with Bag of Words 
+4. **Model Preparation:**
+   - Prepare model pipeline.
+   - Tune the models to prepare optimized models using GridSearch with 5-fold cross validation.
+   - Design the hybrid model.
+5. **Spam Email Detection:**
+   - Apply the models to the prepared data for spam email detection.
+   - Obtain the prediction results.
+   - Comapare the results and visualize the results.
+## Requirements
+The project requires Python 3.11 or above and the following Python libraries:
 
-This process includes reading the Dataset, will extract two target features after reading the dataset they are
-1)Message and 2)Spam(Suspicious mail)/Ham(Normal mail)
+- `numpy`
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `nltk`
+- `sklearn`
 
-#Cleaning The Data:
+Install dependencies using the following command:
+```bash
+pip install numpy pandas matplotlib seaborn nltk scikit-learn
 
-The Datset contains missing values or empty values which leads us to the improper out, so any missing values or empty values in the dataset will be removed.
-Text Cleaning:
-we will be using "Stopwords" function to remove the unnecessary words in the dataset
 
-#Sampling the Data:
 
-Sampling the data needs to be done because sampling the data increases the number of training samples which can improves model's ability.
-After Sampling Data Splitting is done, which splits data into Training set(75%) and testing set(25%)
+```python
 
-#Text Preprocessing Techniques:
+```
 
-We will be using CountVectorization and TFIDF(Term Frequency Inverse Document Frequency),These are both techniques used in NLP(Natural Language Processing).
-These techniques helps in converting text into numerics which is very helpful in detection of Phishing emails
 
-#Applying Machine Learning Algorithms:
 
-We have used RandomForest,LogesticRegression and Naviyes Bayes Algorithms and compare the metrics like confusion matrix,accuracy,precision and F1score.
-Comparing the metrics of the Algorithms and choosing the best algorithm.
 
-#Visualizations:
 
-plots shows the accuracy of the model's and results of models we used
